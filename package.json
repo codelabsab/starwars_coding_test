@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run --parallel --stream start",
+    "test": "lerna run --stream test",
+    "lint:eslint": "eslint . --ext .ts --ext tsx",
+    "lint:prettier": "prettier -c .",
+    "lint": "yarn lint:prettier && yarn lint:eslint",
+    "prettier": "prettier --write .",
+    "eslint": "eslint . --ext .ts --ext tsx --fix"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "lerna": "^3.22.1",
+    "@octokit/core": "~3.2.1",
+    "eslint-plugin-react": "~7.21.5",
+    "@typescript-eslint/parser": "~4.7.0",
+    "@typescript-eslint/eslint-plugin": "~4.7.0",
+    "typescript": "~4.0.5",
+    "prettier": "~2.1.2",
+    "husky": "~4.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettier && yarn eslint && git add .",
+      "pre-push": "yarn test"
+    }
+  }
+}

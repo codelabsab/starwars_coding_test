@@ -1,0 +1,37 @@
+.wrapper {
+  background-color: #131313;
+  border: solid gray 2px;
+  border-radius: 1em;
+  min-height: 70%;
+  position: relative;
+  bottom:1.5em
+}
+
+.titleWrapper {
+  border-bottom: solid gray 2px;
+  padding: 1em 2em;
+
+  & > span {
+    font-size: 1.2em;
+  }
+}
+
+.infoWrapper {
+  margin: auto;
+  max-width: 400px;
+  padding: 2em 0;
+
+  & > svg {
+    max-width: 100%;
+  }
+}
+
+.infoText {
+  font-size: 1.5em;
+}
+
+.descriptionText {
+  font-size: 0.8em;
+  color: red;
+}
+

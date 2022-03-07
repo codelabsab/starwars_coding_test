@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Roboto&display=swap');
+
+html {
+  height: 124vh;
+}
+
+body {
+  height: 124vh;
+  width:100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#___gatsby {
+  height: 100%;
+}
+
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+.Table {
+  border-spacing: 20px;
+
+  border-radius: 5px;
+  margin-top: 50px;
+ }
+ 
+ body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #6c7ac9;
+ }
+ 
+ #root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ }
+ 
+ .pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+ }
+ 
+ .pagination a {
+  cursor: default;
+  padding: 10px;
+  border-radius: 5px;
+
+  margin-left: 10px;
+ }
+ 
+ .pagination li:not(.disabled) a:hover {
+  background-color: grey;
+  cursor: pointer;
+ }
+ 
+ .pagination li a {
+  font-weight: bold;
+ }
+ 
+ .pagination li.active a {
+  color: #fff;
+  background: grey;
+ }
+ 
+ .pagination li.disabled a {
+  pointer-events: none;
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+ }
