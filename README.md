@@ -40,6 +40,12 @@ The boilerplate should be runnable from start. You can make sure of this by runn
 root directory:
 
 ```shell script
+# start frontend
+cd packages/frontend
+yarn test && yarn start
+
+# start backend
+cd packages/backend
 yarn test && yarn start
 ```
 
